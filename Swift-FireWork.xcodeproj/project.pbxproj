@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840B472324B31F6C00A3F02F /* ClassicFireworkAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B472224B31F6C00A3F02F /* ClassicFireworkAnimator.swift */; };
+		840B472524B40F9600A3F02F /* ClassicFireworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B472424B40F9600A3F02F /* ClassicFireworkController.swift */; };
+		840B472724B4427200A3F02F /* FountainFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B472624B4427200A3F02F /* FountainFirework.swift */; };
+		840B472924B4496B00A3F02F /* FountainSparkTrajectoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B472824B4496B00A3F02F /* FountainSparkTrajectoryFactory.swift */; };
+		840B472B24B44DD300A3F02F /* FountainFireworkAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B472A24B44DD300A3F02F /* FountainFireworkAnimator.swift */; };
+		840B472D24B458CC00A3F02F /* FountainFireworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B472C24B458CC00A3F02F /* FountainFireworkController.swift */; };
+		84695029276881250083A5B3 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84695028276881250083A5B3 /* Toast.swift */; };
+		847564CC2492015100AE1132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847564CB2492015100AE1132 /* AppDelegate.swift */; };
+		847564CE2492015100AE1132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847564CD2492015100AE1132 /* SceneDelegate.swift */; };
+		847564D02492015100AE1132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847564CF2492015100AE1132 /* ViewController.swift */; };
+		847564D32492015100AE1132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847564D12492015100AE1132 /* Main.storyboard */; };
+		847564D52492015200AE1132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847564D42492015200AE1132 /* Assets.xcassets */; };
+		847564D82492015200AE1132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847564D62492015200AE1132 /* LaunchScreen.storyboard */; };
+		847564E32492015200AE1132 /* Swift_FireWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847564E22492015200AE1132 /* Swift_FireWorkTests.swift */; };
+		847564EE2492015200AE1132 /* Swift_FireWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847564ED2492015200AE1132 /* Swift_FireWorkUITests.swift */; };
+		847564FF249215BA00AE1132 /* PusheenSparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847564FE249215BA00AE1132 /* PusheenSparkViewFactory.swift */; };
+		84756501249217E100AE1132 /* PusheenFountainFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84756500249217E100AE1132 /* PusheenFountainFirework.swift */; };
+		847565032492186000AE1132 /* PusheenFountainFireworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847565022492186000AE1132 /* PusheenFountainFireworkController.swift */; };
+		84756505249218C000AE1132 /* DuckSparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84756504249218C000AE1132 /* DuckSparkViewFactory.swift */; };
+		847565072492198200AE1132 /* DuckFountainFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847565062492198200AE1132 /* DuckFountainFirework.swift */; };
+		84756509249219CB00AE1132 /* DuckFountainFireworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84756508249219CB00AE1132 /* DuckFountainFireworkController.swift */; };
+		84AF1F612767127A003A6FA0 /* LoadingPicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF1F602767127A003A6FA0 /* LoadingPicView.swift */; };
+		84B386C624A334C8007602A2 /* SparkTrajectoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B386C524A334C8007602A2 /* SparkTrajectoryFactory.swift */; };
+		84B386C824A33A6E007602A2 /* SparkTrajectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B386C724A33A6E007602A2 /* SparkTrajectory.swift */; };
+		84B386CA24A34534007602A2 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B386C924A34534007602A2 /* CGPoint+Extensions.swift */; };
+		84B386CC24A346A7007602A2 /* Firework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B386CB24A346A7007602A2 /* Firework.swift */; };
+		84B386CE24A34780007602A2 /* SparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B386CD24A34780007602A2 /* SparkViewFactory.swift */; };
+		84B386D024A34872007602A2 /* SparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B386CF24A34872007602A2 /* SparkView.swift */; };
+		84B386D224A348E5007602A2 /* SparkViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B386D124A348E5007602A2 /* SparkViewAnimator.swift */; };
+		84B386D424A34A43007602A2 /* FireworkSpark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B386D324A34A43007602A2 /* FireworkSpark.swift */; };
+		84BBED4324A86DF000C0F77D /* FireworkSparkScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBED4224A86DF000C0F77D /* FireworkSparkScheduler.swift */; };
+		84BBED4524A87A0900C0F77D /* CircleColorSparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBED4424A87A0900C0F77D /* CircleColorSparkView.swift */; };
+		84BBED4724A87C3B00C0F77D /* CircleColorSparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBED4624A87C3B00C0F77D /* CircleColorSparkViewFactory.swift */; };
+		84BBED4924A87EC500C0F77D /* ImageSparkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBED4824A87EC500C0F77D /* ImageSparkView.swift */; };
+		84BBED4B24A8833F00C0F77D /* ImageSparkViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBED4A24A8833F00C0F77D /* ImageSparkViewFactory.swift */; };
+		84BBED4D24A884B800C0F77D /* ClassicFirework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBED4C24A884B800C0F77D /* ClassicFirework.swift */; };
+		84BBED4F24A88DEA00C0F77D /* ClassicSparkTrajectoryFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBED4E24A88DEA00C0F77D /* ClassicSparkTrajectoryFactoryProtocol.swift */; };
+		84BBED5124A88E5E00C0F77D /* ClassicSparkTrajectoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BBED5024A88E5E00C0F77D /* ClassicSparkTrajectoryFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		847564DF2492015200AE1132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847564C02492015100AE1132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847564C72492015100AE1132;
+			remoteInfo = "Swift-FireWork";
+		};
+		847564EA2492015200AE1132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 847564C02492015100AE1132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 847564C72492015100AE1132;
+			remoteInfo = "Swift-FireWork";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840B472224B31F6C00A3F02F /* ClassicFireworkAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicFireworkAnimator.swift; sourceTree = "<group>"; };
+		840B472424B40F9600A3F02F /* ClassicFireworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicFireworkController.swift; sourceTree = "<group>"; };
+		840B472624B4427200A3F02F /* FountainFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FountainFirework.swift; sourceTree = "<group>"; };
+		840B472824B4496B00A3F02F /* FountainSparkTrajectoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FountainSparkTrajectoryFactory.swift; sourceTree = "<group>"; };
+		840B472A24B44DD300A3F02F /* FountainFireworkAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FountainFireworkAnimator.swift; sourceTree = "<group>"; };
+		840B472C24B458CC00A3F02F /* FountainFireworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FountainFireworkController.swift; sourceTree = "<group>"; };
+		84695028276881250083A5B3 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		847564C82492015100AE1132 /* Swift-FireWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-FireWork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847564CB2492015100AE1132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		847564CD2492015100AE1132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		847564CF2492015100AE1132 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		847564D22492015100AE1132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		847564D42492015200AE1132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		847564D72492015200AE1132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		847564D92492015200AE1132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847564DE2492015200AE1132 /* Swift-FireWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-FireWorkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847564E22492015200AE1132 /* Swift_FireWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_FireWorkTests.swift; sourceTree = "<group>"; };
+		847564E42492015200AE1132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847564E92492015200AE1132 /* Swift-FireWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-FireWorkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847564ED2492015200AE1132 /* Swift_FireWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_FireWorkUITests.swift; sourceTree = "<group>"; };
+		847564EF2492015200AE1132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847564FE249215BA00AE1132 /* PusheenSparkViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusheenSparkViewFactory.swift; sourceTree = "<group>"; };
+		84756500249217E100AE1132 /* PusheenFountainFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusheenFountainFirework.swift; sourceTree = "<group>"; };
+		847565022492186000AE1132 /* PusheenFountainFireworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PusheenFountainFireworkController.swift; sourceTree = "<group>"; };
+		84756504249218C000AE1132 /* DuckSparkViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckSparkViewFactory.swift; sourceTree = "<group>"; };
+		847565062492198200AE1132 /* DuckFountainFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckFountainFirework.swift; sourceTree = "<group>"; };
+		84756508249219CB00AE1132 /* DuckFountainFireworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckFountainFireworkController.swift; sourceTree = "<group>"; };
+		84AF1F602767127A003A6FA0 /* LoadingPicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPicView.swift; sourceTree = "<group>"; };
+		84B386C524A334C8007602A2 /* SparkTrajectoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkTrajectoryFactory.swift; sourceTree = "<group>"; };
+		84B386C724A33A6E007602A2 /* SparkTrajectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkTrajectory.swift; sourceTree = "<group>"; };
+		84B386C924A34534007602A2 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		84B386CB24A346A7007602A2 /* Firework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firework.swift; sourceTree = "<group>"; };
+		84B386CD24A34780007602A2 /* SparkViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkViewFactory.swift; sourceTree = "<group>"; };
+		84B386CF24A34872007602A2 /* SparkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkView.swift; sourceTree = "<group>"; };
+		84B386D124A348E5007602A2 /* SparkViewAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkViewAnimator.swift; sourceTree = "<group>"; };
+		84B386D324A34A43007602A2 /* FireworkSpark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworkSpark.swift; sourceTree = "<group>"; };
+		84BBED4224A86DF000C0F77D /* FireworkSparkScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworkSparkScheduler.swift; sourceTree = "<group>"; };
+		84BBED4424A87A0900C0F77D /* CircleColorSparkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColorSparkView.swift; sourceTree = "<group>"; };
+		84BBED4624A87C3B00C0F77D /* CircleColorSparkViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleColorSparkViewFactory.swift; sourceTree = "<group>"; };
+		84BBED4824A87EC500C0F77D /* ImageSparkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSparkView.swift; sourceTree = "<group>"; };
+		84BBED4A24A8833F00C0F77D /* ImageSparkViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSparkViewFactory.swift; sourceTree = "<group>"; };
+		84BBED4C24A884B800C0F77D /* ClassicFirework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicFirework.swift; sourceTree = "<group>"; };
+		84BBED4E24A88DEA00C0F77D /* ClassicSparkTrajectoryFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicSparkTrajectoryFactoryProtocol.swift; sourceTree = "<group>"; };
+		84BBED5024A88E5E00C0F77D /* ClassicSparkTrajectoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicSparkTrajectoryFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		847564C52492015100AE1132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847564DB2492015200AE1132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847564E62492015200AE1132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		847564BF2492015100AE1132 = {
+			isa = PBXGroup;
+			children = (
+				847564CA2492015100AE1132 /* Swift-FireWork */,
+				847564E12492015200AE1132 /* Swift-FireWorkTests */,
+				847564EC2492015200AE1132 /* Swift-FireWorkUITests */,
+				847564C92492015100AE1132 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		847564C92492015100AE1132 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				847564C82492015100AE1132 /* Swift-FireWork.app */,
+				847564DE2492015200AE1132 /* Swift-FireWorkTests.xctest */,
+				847564E92492015200AE1132 /* Swift-FireWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		847564CA2492015100AE1132 /* Swift-FireWork */ = {
+			isa = PBXGroup;
+			children = (
+				84D4973924932EE90013F281 /* Fireworks */,
+				847564FD2492159500AE1132 /* Custom Firworks */,
+				847564CB2492015100AE1132 /* AppDelegate.swift */,
+				847564CD2492015100AE1132 /* SceneDelegate.swift */,
+				847564CF2492015100AE1132 /* ViewController.swift */,
+				847564D12492015100AE1132 /* Main.storyboard */,
+				847564D42492015200AE1132 /* Assets.xcassets */,
+				847564D62492015200AE1132 /* LaunchScreen.storyboard */,
+				847564D92492015200AE1132 /* Info.plist */,
+			);
+			path = "Swift-FireWork";
+			sourceTree = "<group>";
+		};
+		847564E12492015200AE1132 /* Swift-FireWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				847564E22492015200AE1132 /* Swift_FireWorkTests.swift */,
+				847564E42492015200AE1132 /* Info.plist */,
+			);
+			path = "Swift-FireWorkTests";
+			sourceTree = "<group>";
+		};
+		847564EC2492015200AE1132 /* Swift-FireWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				847564ED2492015200AE1132 /* Swift_FireWorkUITests.swift */,
+				847564EF2492015200AE1132 /* Info.plist */,
+			);
+			path = "Swift-FireWorkUITests";
+			sourceTree = "<group>";
+		};
+		847564FD2492159500AE1132 /* Custom Firworks */ = {
+			isa = PBXGroup;
+			children = (
+				847564FE249215BA00AE1132 /* PusheenSparkViewFactory.swift */,
+				84756500249217E100AE1132 /* PusheenFountainFirework.swift */,
+				847565022492186000AE1132 /* PusheenFountainFireworkController.swift */,
+				84756504249218C000AE1132 /* DuckSparkViewFactory.swift */,
+				847565062492198200AE1132 /* DuckFountainFirework.swift */,
+				84756508249219CB00AE1132 /* DuckFountainFireworkController.swift */,
+				84AF1F602767127A003A6FA0 /* LoadingPicView.swift */,
+				84695028276881250083A5B3 /* Toast.swift */,
+			);
+			path = "Custom Firworks";
+			sourceTree = "<group>";
+		};
+		84D4973924932EE90013F281 /* Fireworks */ = {
+			isa = PBXGroup;
+			children = (
+				84D4976B24934AC60013F281 /* Classic Firework */,
+				84D4974024932EE90013F281 /* Fountain Firework */,
+				84D4974524932EE90013F281 /* Spark Views */,
+				84D4974A24932EE90013F281 /* Model */,
+				84D4975324932EE90013F281 /* System Extensions */,
+			);
+			path = Fireworks;
+			sourceTree = "<group>";
+		};
+		84D4974024932EE90013F281 /* Fountain Firework */ = {
+			isa = PBXGroup;
+			children = (
+				840B472624B4427200A3F02F /* FountainFirework.swift */,
+				840B472824B4496B00A3F02F /* FountainSparkTrajectoryFactory.swift */,
+				840B472A24B44DD300A3F02F /* FountainFireworkAnimator.swift */,
+				840B472C24B458CC00A3F02F /* FountainFireworkController.swift */,
+			);
+			path = "Fountain Firework";
+			sourceTree = "<group>";
+		};
+		84D4974524932EE90013F281 /* Spark Views */ = {
+			isa = PBXGroup;
+			children = (
+				84BBED4424A87A0900C0F77D /* CircleColorSparkView.swift */,
+				84BBED4624A87C3B00C0F77D /* CircleColorSparkViewFactory.swift */,
+				84BBED4824A87EC500C0F77D /* ImageSparkView.swift */,
+				84BBED4A24A8833F00C0F77D /* ImageSparkViewFactory.swift */,
+			);
+			path = "Spark Views";
+			sourceTree = "<group>";
+		};
+		84D4974A24932EE90013F281 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B386CB24A346A7007602A2 /* Firework.swift */,
+				84B386D324A34A43007602A2 /* FireworkSpark.swift */,
+				84B386CF24A34872007602A2 /* SparkView.swift */,
+				84B386D124A348E5007602A2 /* SparkViewAnimator.swift */,
+				84B386CD24A34780007602A2 /* SparkViewFactory.swift */,
+				84B386C724A33A6E007602A2 /* SparkTrajectory.swift */,
+				84B386C524A334C8007602A2 /* SparkTrajectoryFactory.swift */,
+				84BBED4224A86DF000C0F77D /* FireworkSparkScheduler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84D4975324932EE90013F281 /* System Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84B386C924A34534007602A2 /* CGPoint+Extensions.swift */,
+			);
+			path = "System Extensions";
+			sourceTree = "<group>";
+		};
+		84D4976B24934AC60013F281 /* Classic Firework */ = {
+			isa = PBXGroup;
+			children = (
+				84BBED4C24A884B800C0F77D /* ClassicFirework.swift */,
+				84BBED5024A88E5E00C0F77D /* ClassicSparkTrajectoryFactory.swift */,
+				84BBED4E24A88DEA00C0F77D /* ClassicSparkTrajectoryFactoryProtocol.swift */,
+				840B472224B31F6C00A3F02F /* ClassicFireworkAnimator.swift */,
+				840B472424B40F9600A3F02F /* ClassicFireworkController.swift */,
+			);
+			path = "Classic Firework";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		847564C72492015100AE1132 /* Swift-FireWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847564F22492015200AE1132 /* Build configuration list for PBXNativeTarget "Swift-FireWork" */;
+			buildPhases = (
+				847564C42492015100AE1132 /* Sources */,
+				847564C52492015100AE1132 /* Frameworks */,
+				847564C62492015100AE1132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-FireWork";
+			productName = "Swift-FireWork";
+			productReference = 847564C82492015100AE1132 /* Swift-FireWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		847564DD2492015200AE1132 /* Swift-FireWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847564F52492015200AE1132 /* Build configuration list for PBXNativeTarget "Swift-FireWorkTests" */;
+			buildPhases = (
+				847564DA2492015200AE1132 /* Sources */,
+				847564DB2492015200AE1132 /* Frameworks */,
+				847564DC2492015200AE1132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847564E02492015200AE1132 /* PBXTargetDependency */,
+			);
+			name = "Swift-FireWorkTests";
+			productName = "Swift-FireWorkTests";
+			productReference = 847564DE2492015200AE1132 /* Swift-FireWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		847564E82492015200AE1132 /* Swift-FireWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 847564F82492015200AE1132 /* Build configuration list for PBXNativeTarget "Swift-FireWorkUITests" */;
+			buildPhases = (
+				847564E52492015200AE1132 /* Sources */,
+				847564E62492015200AE1132 /* Frameworks */,
+				847564E72492015200AE1132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				847564EB2492015200AE1132 /* PBXTargetDependency */,
+			);
+			name = "Swift-FireWorkUITests";
+			productName = "Swift-FireWorkUITests";
+			productReference = 847564E92492015200AE1132 /* Swift-FireWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		847564C02492015100AE1132 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = roberger;
+				TargetAttributes = {
+					847564C72492015100AE1132 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					847564DD2492015200AE1132 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 847564C72492015100AE1132;
+					};
+					847564E82492015200AE1132 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 847564C72492015100AE1132;
+					};
+				};
+			};
+			buildConfigurationList = 847564C32492015100AE1132 /* Build configuration list for PBXProject "Swift-FireWork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 847564BF2492015100AE1132;
+			productRefGroup = 847564C92492015100AE1132 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				847564C72492015100AE1132 /* Swift-FireWork */,
+				847564DD2492015200AE1132 /* Swift-FireWorkTests */,
+				847564E82492015200AE1132 /* Swift-FireWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		847564C62492015100AE1132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847564D82492015200AE1132 /* LaunchScreen.storyboard in Resources */,
+				847564D52492015200AE1132 /* Assets.xcassets in Resources */,
+				847564D32492015100AE1132 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847564DC2492015200AE1132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847564E72492015200AE1132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		847564C42492015100AE1132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84756505249218C000AE1132 /* DuckSparkViewFactory.swift in Sources */,
+				84B386C824A33A6E007602A2 /* SparkTrajectory.swift in Sources */,
+				84BBED4324A86DF000C0F77D /* FireworkSparkScheduler.swift in Sources */,
+				84BBED4524A87A0900C0F77D /* CircleColorSparkView.swift in Sources */,
+				84AF1F612767127A003A6FA0 /* LoadingPicView.swift in Sources */,
+				84B386D024A34872007602A2 /* SparkView.swift in Sources */,
+				84B386C624A334C8007602A2 /* SparkTrajectoryFactory.swift in Sources */,
+				847564FF249215BA00AE1132 /* PusheenSparkViewFactory.swift in Sources */,
+				84B386D424A34A43007602A2 /* FireworkSpark.swift in Sources */,
+				847564D02492015100AE1132 /* ViewController.swift in Sources */,
+				84BBED4B24A8833F00C0F77D /* ImageSparkViewFactory.swift in Sources */,
+				847564CC2492015100AE1132 /* AppDelegate.swift in Sources */,
+				84BBED4924A87EC500C0F77D /* ImageSparkView.swift in Sources */,
+				84BBED4D24A884B800C0F77D /* ClassicFirework.swift in Sources */,
+				847564CE2492015100AE1132 /* SceneDelegate.swift in Sources */,
+				84BBED4724A87C3B00C0F77D /* CircleColorSparkViewFactory.swift in Sources */,
+				84756501249217E100AE1132 /* PusheenFountainFirework.swift in Sources */,
+				84BBED5124A88E5E00C0F77D /* ClassicSparkTrajectoryFactory.swift in Sources */,
+				84B386D224A348E5007602A2 /* SparkViewAnimator.swift in Sources */,
+				84695029276881250083A5B3 /* Toast.swift in Sources */,
+				84756509249219CB00AE1132 /* DuckFountainFireworkController.swift in Sources */,
+				84BBED4F24A88DEA00C0F77D /* ClassicSparkTrajectoryFactoryProtocol.swift in Sources */,
+				847565032492186000AE1132 /* PusheenFountainFireworkController.swift in Sources */,
+				840B472924B4496B00A3F02F /* FountainSparkTrajectoryFactory.swift in Sources */,
+				84B386CA24A34534007602A2 /* CGPoint+Extensions.swift in Sources */,
+				840B472B24B44DD300A3F02F /* FountainFireworkAnimator.swift in Sources */,
+				84B386CE24A34780007602A2 /* SparkViewFactory.swift in Sources */,
+				840B472524B40F9600A3F02F /* ClassicFireworkController.swift in Sources */,
+				84B386CC24A346A7007602A2 /* Firework.swift in Sources */,
+				840B472D24B458CC00A3F02F /* FountainFireworkController.swift in Sources */,
+				840B472324B31F6C00A3F02F /* ClassicFireworkAnimator.swift in Sources */,
+				840B472724B4427200A3F02F /* FountainFirework.swift in Sources */,
+				847565072492198200AE1132 /* DuckFountainFirework.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847564DA2492015200AE1132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847564E32492015200AE1132 /* Swift_FireWorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		847564E52492015200AE1132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847564EE2492015200AE1132 /* Swift_FireWorkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		847564E02492015200AE1132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847564C72492015100AE1132 /* Swift-FireWork */;
+			targetProxy = 847564DF2492015200AE1132 /* PBXContainerItemProxy */;
+		};
+		847564EB2492015200AE1132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 847564C72492015100AE1132 /* Swift-FireWork */;
+			targetProxy = 847564EA2492015200AE1132 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		847564D12492015100AE1132 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847564D22492015100AE1132 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		847564D62492015200AE1132 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847564D72492015200AE1132 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		847564F02492015200AE1132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		847564F12492015200AE1132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847564F32492015200AE1132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8VCD54R65;
+				INFOPLIST_FILE = "Swift-FireWork/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xuguangyin.Swift-FireWork";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		847564F42492015200AE1132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8VCD54R65;
+				INFOPLIST_FILE = "Swift-FireWork/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xuguangyin.Swift-FireWork";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		847564F62492015200AE1132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8VCD54R65;
+				INFOPLIST_FILE = "Swift-FireWorkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xuguangyin.Swift-FireWorkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-FireWork.app/Swift-FireWork";
+			};
+			name = Debug;
+		};
+		847564F72492015200AE1132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8VCD54R65;
+				INFOPLIST_FILE = "Swift-FireWorkTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xuguangyin.Swift-FireWorkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-FireWork.app/Swift-FireWork";
+			};
+			name = Release;
+		};
+		847564F92492015200AE1132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8VCD54R65;
+				INFOPLIST_FILE = "Swift-FireWorkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xuguangyin.Swift-FireWorkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swift-FireWork";
+			};
+			name = Debug;
+		};
+		847564FA2492015200AE1132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N8VCD54R65;
+				INFOPLIST_FILE = "Swift-FireWorkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xuguangyin.Swift-FireWorkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Swift-FireWork";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		847564C32492015100AE1132 /* Build configuration list for PBXProject "Swift-FireWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847564F02492015200AE1132 /* Debug */,
+				847564F12492015200AE1132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847564F22492015200AE1132 /* Build configuration list for PBXNativeTarget "Swift-FireWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847564F32492015200AE1132 /* Debug */,
+				847564F42492015200AE1132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847564F52492015200AE1132 /* Build configuration list for PBXNativeTarget "Swift-FireWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847564F62492015200AE1132 /* Debug */,
+				847564F72492015200AE1132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		847564F82492015200AE1132 /* Build configuration list for PBXNativeTarget "Swift-FireWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847564F92492015200AE1132 /* Debug */,
+				847564FA2492015200AE1132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 847564C02492015100AE1132 /* Project object */;
+}
